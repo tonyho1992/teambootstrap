@@ -4,11 +4,9 @@
 }
 body{
     background:#000;
-    font-family:Georgia;
-    font-size: 34px;
-    font-style: italic;
-    letter-spacing:-1px;
+    font: 14px/19px Roboto, sans-serif;
 }
+
 .section{
     margin:0px;
     height:4000px;
@@ -17,7 +15,7 @@ body{
     text-shadow:1px 1px 2px #f0f0f0;
 }
 .section h2{
-    margin:50px 0px 30px 50px;
+    margin:125px 0px 30px 50px;
     font-size:100px;
     text-align:center
 }
