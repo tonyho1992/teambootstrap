@@ -9,26 +9,33 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet2.css">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script>
-$(function() {
-    $('ul.nav a').bind('click',function(event){
-        var $anchor = $(this);
- 
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500,'easeInOutExpo');
-        /*
-        if you don't want to use the easing effects:
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1000);
-        */
-        event.preventDefault();
-    });
-});</script>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+});
+// ]]></script>
 
     <title>Teambootstrap</title>
-
 
   </head>
 
@@ -38,21 +45,27 @@ $(function() {
       <section id="main_content" class="inner">
 
 <div class="section black" id="section1">
-    <h2>Section 1</h2>
+    <h2>Communicate</h2>
+    <ul class="nav">
+        <li>1</li>
+        <li><a href="#section2">2</a></li>
+        <li><a href="#section3">3</a></li>
+    </ul>
     <p>
         MY Spectre around me night and day
         Like a wild beast guards my way;
         My Emanation far within
         Weeps incessantly for my sin.
     </p>
+</div>
+
+<div class="section white" id="section2">
+    <h2>Task Management</h2>
     <ul class="nav">
-        <li>1</li>
-        <li><a href="#section2">2</a></li>
+        <li><a href="#section1">1</a></li>
+        <li>2</li>
         <li><a href="#section3">3</a></li>
     </ul>
-</div>
-<div class="section white" id="section2">
-    <h2>Section 2</h2>
     <p>
         A fathomless and boundless deep,
         There we wander, there we weep;
@@ -60,26 +73,52 @@ $(function() {
         My Spectre follows thee behind.
  
     </p>
+</div>
+
+<div class="section black" id="section1">
+    <h2>Version Control</h2>
+    <ul class="nav">
+        <li>1</li>
+        <li><a href="#section2">2</a></li>
+        <li><a href="#section3">3</a></li>
+    </ul>
+    <p>
+        MY Spectre around me night and day
+        Like a wild beast guards my way;
+        My Emanation far within
+        Weeps incessantly for my sin.
+    </p>
+</div>
+
+<div class="section white" id="section2">
+    <h2>Code Review</h2>
     <ul class="nav">
         <li><a href="#section1">1</a></li>
         <li>2</li>
         <li><a href="#section3">3</a></li>
     </ul>
-</div>
-<div class="section black" id="section3">
-    <h2>Section 3</h2>
     <p>
-        He scents thy footsteps in the snow
-        Wheresoever thou dost go,
-        Thro' the wintry hail and rain.
-        When wilt thou return again?
+        A fathomless and boundless deep,
+        There we wander, there we weep;
+        On the hungry craving wind
+        My Spectre follows thee behind.
  
     </p>
+</div>
+
+<div class="section black" id="section1">
+    <h2>Issue Tracking</h2>
     <ul class="nav">
-        <li><a href="#section1">1</a></li>
+        <li>1</li>
         <li><a href="#section2">2</a></li>
-        <li>3</li>
+        <li><a href="#section3">3</a></li>
     </ul>
+    <p>
+        MY Spectre around me night and day
+        Like a wild beast guards my way;
+        My Emanation far within
+        Weeps incessantly for my sin.
+    </p>
 </div>
 
   </body>
