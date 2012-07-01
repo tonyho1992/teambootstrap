@@ -15,7 +15,15 @@ body{
 }
 .section .overview{
     text-align:center;
+    background:black;
     height:100%
+}
+.section .overview ul {
+    margin-left: 250px;
+}
+.section .overview li {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .section h3{
     color:black;
@@ -49,6 +57,9 @@ body{
     list-style:none;
     margin:20px 0px 0px 550px;
 }
+.nav li {
+    color: #fff;
+}
 .black .nav ul li{
     float:left;
     padding:5px;
@@ -56,11 +67,9 @@ body{
 }
 .black .nav ul li a{
     display:block;
-    color:#222;
 }
 .black .nav ul li a:hover{
     text-decoration:none;
-    color:#222;
 }
 .white .nav ul li{
     float:left;
@@ -69,10 +78,8 @@ body{
 }
 .white .nav ul li a{
     display:block;
-    color:#222;
 }
 .white .nav ul li a:hover{
     text-decoration:none;
-    color:#222;    
 }
 
