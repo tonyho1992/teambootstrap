@@ -14,6 +14,7 @@ body{
     float:left;
 }
 .section .overview{
+    text-align:center;
     background:black;
     height:100%
 }
@@ -82,6 +83,4 @@ body{
 .white .nav ul li a:hover{
     text-decoration:none;
 }
-.section .btn{
-    text-align:center
-}
+
