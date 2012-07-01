@@ -15,11 +15,10 @@ body{
 }
 .section .overview{
     text-align:center;
-    background:black;
     height:100%
 }
 .section h3{
-    color:white;
+    color:black;
 }
 .section h2{
     margin:125px 0px 30px 50px;
@@ -76,6 +75,4 @@ body{
     text-decoration:none;
     color:#222;    
 }
-.section .btn{
-    text-align:center
-}
+
