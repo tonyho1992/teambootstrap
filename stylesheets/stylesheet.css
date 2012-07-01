@@ -53,27 +53,18 @@ body{
     float:left;
     padding:5px;
     margin:5px;
-    color:#aaa;
 }
 .black ul li a{
     display:block;
-    color:#f0f0f0;
 }
-.black ul li a:hover{
-    text-decoration:none;
-    color:#fff;
-}
+
 .white ul li{
     float:left;
     padding:5px;
     margin:5px;
-    color:#aaa;
 }
 .white ul li a{
     display:block;
-    color:#222;
 }
-.white ul li a:hover{
-    text-decoration:none;
-    color:#000;
-}
+
+
