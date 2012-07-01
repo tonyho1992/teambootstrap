@@ -26,7 +26,8 @@ body{
     margin-bottom: 5px;
 }
 .section h3{
-    color:black;
+    text-align: center;
+    color:white;
 }
 .section h2{
     margin:125px 0px 30px 50px;
