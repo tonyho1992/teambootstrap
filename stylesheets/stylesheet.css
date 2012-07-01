@@ -57,11 +57,11 @@ body{
 }
 .black .nav ul li a{
     display:block;
-    color:#ddd
+    color:#222;
 }
 .black .nav ul li a:hover{
     text-decoration:none;
-    color:#fff;
+    color:#222;
 }
 .white .nav ul li{
     float:left;
@@ -74,5 +74,8 @@ body{
 }
 .white .nav ul li a:hover{
     text-decoration:none;
-    color:#000;
+    color:#222;    
+}
+.section .btn{
+    text-align:center
 }
