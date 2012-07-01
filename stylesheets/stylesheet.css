@@ -71,9 +71,7 @@ body{
 .black .nav ul li a{
     display:block;
 }
-.black .nav ul li a:hover{
-    text-decoration:none;
-}
+
 .white .nav ul li{
     float:left;
     padding:5px;
@@ -82,7 +80,5 @@ body{
 .white .nav ul li a{
     display:block;
 }
-.white .nav ul li a:hover{
-    text-decoration:none;
-}
+
 
