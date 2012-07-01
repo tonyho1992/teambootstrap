@@ -54,7 +54,6 @@ body{
     float:left;
     padding:5px;
     margin:5px;
-    color:#aaa;
 }
 .black .nav ul li a{
     display:block;
@@ -68,7 +67,6 @@ body{
     float:left;
     padding:5px;
     margin:5px;
-    color:#aaa;
 }
 .white .nav ul li a{
     display:block;
