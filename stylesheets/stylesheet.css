@@ -19,16 +19,17 @@ body{
     height:100%
 }
 .section h3{
-    color:white
+    color:white;
 }
 .section h2{
     margin:125px 0px 30px 50px;
     font-size:100px;
-    text-align:center
+    text-align:center;
+
 }
-.section p{
-    margin:20px 0px 0px 50px;
-    width:1000px;
+.brief{
+    margin: 40px 0px 20px 50px;
+    text-align: center;
 }
 .section .myframe{
     text-align:center
@@ -45,35 +46,35 @@ body{
     color:#000;
     background:#fff url(../images/white_vert.jpg) repeat-x bottom left;
 }
-.section ul{
+.nav ul{
     list-style:none;
     margin:20px 0px 0px 550px;
 }
-.black ul li{
+.black .nav ul li{
     float:left;
     padding:5px;
     margin:5px;
     color:#aaa;
 }
-.black ul li a{
+.black .nav ul li a{
     display:block;
     color:#f0f0f0;
 }
-.black ul li a:hover{
+.black .nav ul li a:hover{
     text-decoration:none;
     color:#fff;
 }
-.white ul li{
+.white .nav ul li{
     float:left;
     padding:5px;
     margin:5px;
     color:#aaa;
 }
-.white ul li a{
+.white .nav ul li a{
     display:block;
     color:#222;
 }
-.white ul li a:hover{
+.white .nav ul li a:hover{
     text-decoration:none;
     color:#000;
 }
