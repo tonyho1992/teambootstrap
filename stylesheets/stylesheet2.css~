@@ -13,14 +13,6 @@ body{
     width:100%;
     float:left;
 }
-.section .overview{
-    text-align:center;
-    background:black;
-    height:100%
-}
-.section h3{
-    color:white
-}
 .section h2{
     margin:125px 0px 30px 50px;
     font-size:100px;
@@ -53,20 +45,27 @@ body{
     float:left;
     padding:5px;
     margin:5px;
+    color:#aaa;
 }
 .black ul li a{
     display:block;
-    color:#ddd
+    color:#f0f0f0;
 }
-
+.black ul li a:hover{
+    text-decoration:none;
+    color:#fff;
+}
 .white ul li{
     float:left;
     padding:5px;
     margin:5px;
+    color:#aaa;
 }
 .white ul li a{
     display:block;
-    color:#ddd
+    color:#222;
 }
-
-
+.white ul li a:hover{
+    text-decoration:none;
+    color:#000;
+}
