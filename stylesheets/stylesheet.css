@@ -53,6 +53,9 @@ body{
     color:#000;
     background:#fff url(../images/white_vert.jpg) repeat-x bottom left;
 }
+.btn a {
+    color: white;
+}
 .nav ul{
     list-style:none;
     margin:20px 0px 0px 550px;
